@@ -1,0 +1,11 @@
+<div class="card bg-rose-950 w-1/4 mx-auto p-5 ml-10 mt-20 shadow-2xl text-white">
+    <h2 class=" text-3xl font-bold text-rose-950 ml-5 p-1 "> </h2>
+    <ul class="list">
+        @for (member of members(); track member.id) {
+            <li class="list-row items-center">
+                <img src="/user.png" alt="user avatar" class="size-12" rounded-box>
+                {{member.displayName}} - {{member.email}}
+            </li>
+        }
+    </ul>
+</div>
